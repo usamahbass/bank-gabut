@@ -14,7 +14,7 @@ export const getStorage = async () => {
   try {
     const value = await AsyncStorage.getItem('token');
     if (value !== null) {
-      console.log("tokenya", token);
+      console.log('tokenya', token);
     }
   } catch (e) {
     console.log('error-get');
@@ -34,6 +34,14 @@ export function login(values) {
   return axios({
     method: 'post',
     url: `${api}/login`,
+    data: values,
+  });
+}
+
+export function register(values) {
+  return axios({
+    method: 'post',
+    url: `${api}/register`,
     data: values,
   });
 }

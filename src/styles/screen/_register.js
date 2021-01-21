@@ -4,30 +4,28 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
-const LoginStyles = StyleSheet.create({
-  content: {
-    backgroundColor: '#F6F8FB',
-    height: hp('100%'),
-  },
-  container: {
-    marginLeft: wp('6%'),
-    marginRight: wp('6%'),
-  },
-  header: {
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: hp('6%'),
-  },
+const RegisterStyles = StyleSheet.create({
   title: {
-    fontFamily: 'Poppins-Bold',
-    textAlign: 'center',
+    fontFamily: 'Poppins-Regular',
+    fontSize: wp('7'),
+    marginTop: hp('5'),
   },
-  logo: {
-    width: wp('15%'),
-    height: hp('15%'),
+  desc: {
+    flexDirection: 'row',
+    fontFamily: 'Poppins-Regular',
   },
-  loginContent: {
+  registerText: {
+    fontFamily: 'Poppins-Regular',
+  },
+  register: {
+    marginLeft: wp('2'),
+  },
+  registerText2: {
+    fontFamily: 'Poppins-Regular',
+    color: '#25509D',
+    textDecorationLine: 'underline',
+  },
+  registerContent: {
     marginTop: hp('5%'),
   },
   inputBox: {
@@ -36,7 +34,7 @@ const LoginStyles = StyleSheet.create({
   },
   inputText: {
     fontFamily: 'Poppins-Regular',
-    color: '#333'
+    color: '#333',
   },
   inputTextError: {
     fontFamily: 'Poppins-Regular',
@@ -75,15 +73,6 @@ const LoginStyles = StyleSheet.create({
       height: 0,
     },
   },
-  forgotPassword: {
-    marginBottom: hp('3%'),
-  },
-  forgotPasswordText: {
-    color: '#25509D',
-    textAlign: 'right',
-    textDecorationLine: 'underline',
-    textDecorationColor: '#25509D',
-  },
   button: {
     marginTop: hp('.5%'),
     justifyContent: 'center',
@@ -99,28 +88,6 @@ const LoginStyles = StyleSheet.create({
     color: '#fff',
     fontSize: wp('4'),
   },
-  separator: {
-    textAlign: 'center',
-    fontFamily: 'Poppins-Regular',
-    marginTop: hp('3%'),
-    color: '#25509D',
-  },
-  buttonRegister: {
-    marginTop: hp('3%'),
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderColor: '#25509D',
-    borderWidth: 1,
-    width: wp('87%'),
-    height: hp('7.9%'),
-    padding: wp('4'),
-    borderRadius: 6,
-  },
-  buttonTextRegister: {
-    fontFamily: 'Poppins-Regular',
-    color: '#25509D',
-    fontSize: wp('4'),
-  },
 });
 
-export default LoginStyles;
+export default RegisterStyles;

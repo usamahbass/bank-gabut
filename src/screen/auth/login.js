@@ -39,8 +39,11 @@ const Login = ({navigation}) => {
             role: res.data.data.user.role,
           };
 
+          // dispatch login state
           dispatch(login());
+          // dispatch payload data
           dispatch(setData(payload));
+          // set token
           setStorage(res.data.data.token);
 
           setLoading(false);
@@ -59,7 +62,7 @@ const Login = ({navigation}) => {
             style={LoginStyles.logo}
             source={require('../../assets/images/boring.png')}
           />
-          <Text style={LoginStyles.title}>Bank Sampah Gabut</Text>
+          <Text style={LoginStyles.title}>Bank Gabut</Text>
         </View>
 
         <View style={LoginStyles.container}>
